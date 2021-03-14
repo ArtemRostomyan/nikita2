@@ -1,0 +1,451 @@
+@charset "UTF-8";
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+textarea {
+  resize: none;
+}
+
+body {
+  line-height: 1;
+  font-family: "Arial";
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: "Arial";
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.tournaments {
+  padding: 100px 0 120px 0;
+  background-color: #dfdfdf;
+  font-weight: 600;
+}
+
+.tournaments__info-box {
+  text-align: center;
+}
+
+.tournaments__title {
+  font-size: 29px;
+}
+
+.tournaments__description {
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tournaments__list {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tournaments:not(:first-child) {
+  margin-top: 40px;
+}
+
+.tournaments-item {
+  background-color: #fff;
+  height: 450px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tournaments-item__image {
+  width: 280px;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.tournaments-item__image.second {
+  width: 375px;
+  height: 375px;
+}
+
+.tournaments-item__info-box {
+  height: 200px;
+  padding: 20px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tournaments-item__info-box.second {
+  padding: 5px 10px;
+  height: 70px;
+}
+
+.tournaments-item__title {
+  font-size: 20px;
+}
+
+.tournaments-item__link {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.tournaments-item__link::before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: black;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.tournaments-item__link:hover::before {
+  width: 80%;
+}
+
+.tournaments-item:hover {
+  -webkit-box-shadow: 0 0 10px 3px black;
+          box-shadow: 0 0 10px 3px black;
+}
+
+.tournaments-item.second {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.card-block {
+  background-color: #dfdfdf;
+  padding: 100px 0;
+}
+
+.card-block__item {
+  padding: 20px;
+  width: 330px;
+  height: 520px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card-block__item.first {
+  background-color: #000;
+  position: relative;
+}
+
+.card-block__item.first::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url(./../images/bcg_foot1.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.card-block__item.first:hover::before {
+  opacity: 0.4;
+}
+
+.card-block__item.second {
+  background-color: #575757;
+}
+
+.card-block__news {
+  color: rgba(255, 255, 255, 0.801);
+  display: inline-block;
+  background-color: black;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.card-block__title {
+  font-size: 50px;
+  color: #fff;
+}
+
+.card-block__info {
+  background-color: black;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.781);
+}
+
+.card-block__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mini-blocks {
+  padding: 0;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.mini-blocks__item {
+  padding: 20px;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  font-weight: 600;
+}
+
+.mini-blocks__item__quote {
+  font-size: 17px;
+}
+
+.mini-blocks__item__text {
+  font-size: 22px;
+}
+
+.mini-blocks__item__name {
+  font-size: 18px;
+}
+
+.cards-last {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cards-last__item {
+  padding: 20px;
+  background-color: #fff;
+  width: 45%;
+}
+
+.cards-last__title {
+  font-weight: 700;
+  font-size: 19px;
+}
+
+.cards-last__text {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.cards-last__link {
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: #fff;
+  border: 2px solid #000;
+  color: #000;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  border-radius: 10px;
+}
+
+.cards-last__link:hover {
+  background-color: black;
+  color: white;
+  border-radius: 0;
+}
+
+.last-block {
+  padding-bottom: 50px;
+}
+
+.last-block {
+  margin-top: 40px;
+  background-color: #dfdfdf;
+}
+
+.info-box {
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info-box__image {
+  width: 350px;
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info-box__info {
+  position: relative;
+  padding: 40px;
+  background-color: black;
+  color: white;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-box__info::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./../images/поле.jfif) no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.2;
+}
+
+.info-box__author {
+  font-size: 18px;
+}
+
+.info-box__title {
+  font-size: 35px;
+}
+
+.info-box__link {
+  font-size: 18px;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
